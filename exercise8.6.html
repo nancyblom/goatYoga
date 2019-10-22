@@ -1,6 +1,140 @@
 <!DOCTYPE html>
-<head></head>
-<body style="background-color: #ffd1d8">
-    <h1 style="text-align:center">här hamnar sjätte uppgiften sen</h1>
-    <p style="color:rgb(218, 103, 156)">lalalalala</p>
+<head>
+    <title>exercise8.6</title>
+<style>
+   
+   #boxOfMystery {
+    width: 530px;
+    height: 20px;
+    background-color: #a6eb99;
+    margin-top: -8px;
+    margin-left: 5px;
+   }
+   
+   #header {
+    margin-left: 5px;
+   }
+
+   #caption {
+    width: 460px;
+    text-align: center;
+    font-size: 18px;
+   }
+
+    #allt {
+        display: table;
+        width: 440px;
+        height: 190px;
+        border: 2.5px solid #a9a9a9;
+        background-color: #eef5d2;
+        border-spacing: 3px;
+        border-collapse: separate;
+        font-size: 18px;
+    }
+
+    #allt > div {
+        display: table-row;
+    }
+
+
+    .table > div > div {
+        border: 1.5px dotted #a9a9a9;
+        display: table-cell;
+    }
+
+    div > div > div{
+        vertical-align: middle;
+        line-height: 100%;
+        /* vill göra så att alla texter är centrerade mellan topp och botten*/
+    }
+    div.categories>div {
+        border: 2.4px dashed #824e1c;
+        background-color: #f1db8d;
+        display: table-cell;
+        font-weight: 600;
+        vertical-align: bottom;
+        padding: 2px;
+        /* jag vill också få mer mellanrum mellan strecken i min border */
+    }
+
+    .resultat>div {
+        display: table-row;
+    }
+
+    #goldMedal {
+        background-color: #f9d849;
+        text-align: center;
+    }
+
+    #silverMedal {
+        background-color: #c0c0c0;
+        text-align: center;
+    }
+
+    #bronzeMedal {
+        background-color: #ab8a2d;
+        text-align: center;
+    }
+
+    .centered {
+        text-align: center;
+    }
+
+    .left {
+        text-align: left;
+    }
+
+    .right{
+        text-align: right;
+    }
+
+</style>
+</head>
+
+<body>
+
+    <div id="boxOfMystery"></div>
+
+    <h2 id="header">Övning 2</h2>
+
+    <div id="caption">Kula, damer, OS 2016</div>
+
+    <div id="allt" class="table">
+        <div class="categories">
+         <div class="centered" >Idrottare</div>
+         <div class="left">Resultat</div>
+         <div class="left">Placering</div>
+         <div class="centered">Land</div>
+        </div>
+
+        <div>
+         <div class="name">Michelle Carter</div>
+         <div>20,63m</div>
+         <div id="goldMedal" class=centered>1</div>
+         <div class=right>USA</div>    
+        </div>     
+        
+        <div>
+         <div class="name">Valerie Adams</div>
+         <div>20,42m</div>
+         <div id="silverMedal" class=centered>2</div>
+         <div class=right>Nya Zeeland</div>
+        </div>
+
+        <div>
+         <div class="name">Anita Márton</div>
+         <div>19,87m</div>
+         <div id="bronzeMedal" class=centered>3</div>
+         <div class=right>Ungern</div>
+        </div>
+        
+        <div>
+         <div class="name">Gong Lijiao</div>
+         <div>19,39m</div>
+         <div class=centered>4</div>
+         <div class=right>Kina</div>
+        </div>
+    </div>
+    
+   
 </body>
